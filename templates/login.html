@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<section class="main">
+    <div class="row">
+        <div class="first">
+            <h1>Login</h1>
+            <form action="" method="POST" class="form">
+            <input type="text" placeholder="username" name="username" value={{request.form.username}}>
+
+            <input type="password" placeholder="Password"  name="password" value={{request.form.password}}>
+            <div class="size1"></div>
+            <button type="submit" id="btn">Login</button>
+        </form>
+        <h5><i>Only for Authorized Users</i></h5>
+    </div>
+    
+        <div class="second">
+            <img src="/static/images/logo.png" alt="">
+            <h2>Helmet Detection and <br> License Plate <br>Recognition System</h2>
+            <p>An Artificial Intelligent System to Foster <br> The Use of Helmet by Motorists</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

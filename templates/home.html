@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% include 'includes/_navbar.html' %}
+<link rel="stylesheet" href="/static/css/main.css">
+  <div class="text">
+    <h2>Upload Data For Detection</h2>
+    <p>Add a minimum of one file you want to Detect</p>
+</div>
+
+<div class="content">
+    <div class="box">
+        <img src="/static/images/icon.png" alt="">
+        <h3>Drag & drop files or         
+            <form>
+            <input id="imageinput" type="file" name="image" onchange="readUrl(this)">
+          </form></h3>
+        <h6>Supported formates: JPEG, PNG, GIF, MP4</h6>
+    </div>
+
+    <button>Detect Now</button>
+
+</div>
+{% endblock %}
